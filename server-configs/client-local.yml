@@ -1,4 +1,4 @@
 spring:
   application:
     name: local
-  message: "{cipher}6d0676b970d36a97ff414d85a0ee168abfd518a25e76936782bb7cb1f6d5ee978755e4f51fba070eeb6f9090ea96f80e"
+  message: "{cipher}821ffc47e9aa238bd867b3147efd56a6cfdc649cf4b59b630556dd6f3158e2f442ce129168403159be0f215bb7708b33"

@@ -1,4 +1,4 @@
 spring:
   application:
     name: local
-  message: Spring Local Server!!!!!
+  message: "{cipher}6d0676b970d36a97ff414d85a0ee168abfd518a25e76936782bb7cb1f6d5ee978755e4f51fba070eeb6f9090ea96f80e"

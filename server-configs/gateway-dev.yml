@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: dev
+zuul:
+  routes:
+    member:
+      stripPrefix: false
+      path: /v1/search/**
+      url: http://localhost:8081
+    else:
+      stripPrefix: false
+      path: /**
+      url: http://localhost:8081

@@ -1,0 +1,7 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: board-dev
+  message: Spring board-dev Server!!!!!

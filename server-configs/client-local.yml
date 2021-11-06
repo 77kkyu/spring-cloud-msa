@@ -1,4 +1,0 @@
-spring:
-  application:
-    name: local
-  message: "{cipher}cf4500b7c636a57d683b7736ecd11616387fe2d5c4a9dbdad5ec025c193324fd07c48cd9645006828dc4019aa6cb93ca"

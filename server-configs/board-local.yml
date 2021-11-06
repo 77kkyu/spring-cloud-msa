@@ -1,0 +1,7 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: board-local
+  message: Spring board-local Server!!!!!

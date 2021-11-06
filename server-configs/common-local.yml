@@ -5,4 +5,4 @@ spring:
   application:
     name: common-local
     message: Spring common-local Server!!!!!
-    secretkey: "{cipher}cf4500b7c636a57d683b7736ecd11616387fe2d5c4a9dbdad5ec025c193324fd07c48cd9645006828dc4019aa6cb93ca"
+    secretkey: "{cipher}a3365427b6a91c8e8ed8080a643a8b95abcbc996a0851a5130c21b9b33fcce91"

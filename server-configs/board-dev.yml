@@ -3,5 +3,5 @@ server:
 
 spring:
   application:
-    name: board-dev
+    name: board
   message: Spring board-dev Server!!!!!

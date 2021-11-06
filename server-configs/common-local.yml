@@ -3,6 +3,6 @@ server:
 
 spring:
   application:
-    name: common-local
+    name: common
     message: Spring common-local Server!!!!!
     secretkey: "{cipher}a3365427b6a91c8e8ed8080a643a8b95abcbc996a0851a5130c21b9b33fcce91"

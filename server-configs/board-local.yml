@@ -3,5 +3,5 @@ server:
 
 spring:
   application:
-    name: board-local
+    name: board
   message: Spring board-local Server!!!!!

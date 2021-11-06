@@ -3,5 +3,5 @@ server:
 
 spring:
   application:
-    name: search-local
+    name: search
   message: Spring search-local Server!!!!!

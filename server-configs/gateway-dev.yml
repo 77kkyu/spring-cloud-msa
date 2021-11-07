@@ -20,29 +20,28 @@ spring:
                 postLogger: true
 
         - id: board
-            uri: lb://BOARD  # service-discovry에 등록된 Application name
-            predicates: # 조건
-              - Path=/v1/board/**
-            filters:
-              - CustomFilter
-              - name: LoggingFilter
-                args:
-                  baseMessage: Spring Cloud Gateway Logging Filter
-                  preLogger: true
-                  postLogger: true
+          uri: lb://BOARD  # service-discovry에 등록된 Application name
+          predicates: # 조건
+            - Path=/v1/board/**
+          filters:
+            - CustomFilter
+            - name: LoggingFilter
+              args:
+                baseMessage: Spring Cloud Gateway Logging Filter
+                preLogger: true
+                postLogger: true
 
         - id: search
-            uri: lb://SEARCH  # service-discovry에 등록된 Application name
-            predicates: # 조건
-              - Path=/v1/search/**
-            filters:
-              - CustomFilter
-              - name: LoggingFilter
-                args:
-                  baseMessage: Spring Cloud Gateway Logging Filter
-                  preLogger: true
-                  postLogger: true
-
+          uri: lb://SEARCH  # service-discovry에 등록된 Application name
+          predicates: # 조건
+            - Path=/v1/search/**
+          filters:
+            - CustomFilter
+            - name: LoggingFilter
+              args:
+                baseMessage: Spring Cloud Gateway Logging Filter
+                preLogger: true
+                postLogger: true
           default-filters:
             - name: GlobalFilter
               args:

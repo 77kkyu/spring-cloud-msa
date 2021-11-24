@@ -1,0 +1,67 @@
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8081/"
+  cloud:
+    config:
+      name: gateway
+      profile: dev
+
+#server:
+#  port: 8000
+#
+#spring:
+#  application:
+#    name: gateway-service
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: common
+#          uri: lb://COMMON  # service-discovry에 등록된 Application name
+#          predicates: # 조건
+#            - Path=/v1/common/**
+#          filters:
+#            - CustomFilter
+#            - name: LoggingFilter
+#              args:
+#                baseMessage: Spring Cloud Gateway Logging Filter
+#                preLogger: true
+#                postLogger: true
+#
+#        - id: board
+#          uri: lb://BOARD  # service-discovry에 등록된 Application name
+#          predicates: # 조건
+#            - Path=/v1/board/**
+#          filters:
+#            - CustomFilter
+#            - name: LoggingFilter
+#              args:
+#                baseMessage: Spring Cloud Gateway Logging Filter
+#                preLogger: true
+#                postLogger: true
+#
+#        - id: search
+#          uri: lb://SEARCH  # service-discovry에 등록된 Application name
+#          predicates: # 조건
+#            - Path=/v1/search/**
+#          filters:
+#            - CustomFilter
+#            - name: LoggingFilter
+#              args:
+#                baseMessage: Spring Cloud Gateway Logging Filter
+#                preLogger: true
+#                postLogger: true
+#          default-filters:
+#            - name: GlobalFilter
+#              args:
+#                baseMessage: Spring Cloud Gateway Global Filter
+#                preLogger: true
+#                postLogger: true
+#
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#  instance:
+#    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}

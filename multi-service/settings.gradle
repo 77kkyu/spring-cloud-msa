@@ -1,0 +1,5 @@
+rootProject.name = 'multi-service'
+include 'module-common'
+include 'module-search'
+include 'module-board'
+

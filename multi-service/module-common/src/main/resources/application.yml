@@ -1,0 +1,29 @@
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8081/"
+  cloud:
+    config:
+      name: common
+      profile: local
+      #github에 등록된 client-local.yml
+
+# 암호화
+# config-server에 등록된 key (key는 항상 동일)
+encrypt:
+  key: kkyu-encrypt-key
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: refresh
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+

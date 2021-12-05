@@ -65,8 +65,7 @@ Eureka Server는 Eureka Client에 해당하는 마이크로서비스들의 상�
 (Git Repository에 시스템 환경을 저장해 두고 불러와서 전파할 수 있습니다)
 ```
 
-[Configuration Server](https://github.com/77kkyu/spring-cloud-msa/tree/main/server-configs)
-
+[Configuration Server](https://github.com/77kkyu/spring-cloud-msa/tree/main/configuration)
 
 ---
 
